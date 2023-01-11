@@ -1,0 +1,111 @@
+body {
+    font-family: 'Abel', sans-serif;
+    font-size: large;
+
+}
+header{
+   background-image:url(/img/fondo.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height:800px;
+   position: relative;
+   margin-bottom: 2rem;
+   display: flex;
+   justify-content: center;
+   text-decoration: solid;
+}
+h2, h4 {
+    text-transform: uppercase;
+    text-decoration: underline;
+
+}
+body {
+    background-color: #0093E9;
+    background-image: linear-gradient(180deg, #0093E9 43%, #80D0C7 73%);
+}    
+span{
+    text-transform: uppercase;
+}
+.perfil{
+    text-align: center;
+    padding-top: 100px;    ;
+}
+.perfil_img {
+    max-width: 250px;
+    cursor: pointer;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    margin-inline-start: 280px;
+    margin-inline-end: 450px;
+    justify-content: center;
+}
+@media (max-width: 1200px) {
+    .container {
+        margin-inline-start: 180px;
+        margin-inline-end: 100px;
+        
+    }
+}
+@media (min-width: 768px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        margin-inline-start: 100px;
+        margin-inline-end: 150px;
+    }
+}
+@media (max-width: 375px){
+    
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+         margin-inline-start: auto;
+        position:absolute;
+ 
+    }
+    .formacion{
+        padding-inline-end: 300px;
+    }
+    img.btn-whatsapp {
+        position: absolute;
+    }
+    footer {
+        display: none;
+        
+    }
+}
+    
+
+.info-contacto{
+    padding-right: 300px;
+}
+
+
+img.btn-whatsapp {
+    display: block !important;
+    position: fixed;
+    z-index: 9999999;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    border-radius:100px !important;
+    }
+img.btn-whatsapp:hover{
+    border-radius:100px !important;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1); 
+    -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+    box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+    transition-duration: 1s;
+    } 
+
+footer {
+    text-transform: uppercase;
+    text-decoration: double;
+    text-align: center;
+    padding: 100px;
+}
